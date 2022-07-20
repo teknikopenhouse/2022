@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Supersonic Rocketship Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Supersonic Rocketship Regular'), url('Supersonic Rocketship.woff') format('woff');
+}
+
+.supersonic {
+	font-family: 'Supersonic Rocketship Regular' !important;
+}

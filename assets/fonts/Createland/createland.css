@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Createland';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Createland'), url('Createland.woff') format('woff');
+}
+
+.createland{
+	font-family: 'Createland' !important;
+}
