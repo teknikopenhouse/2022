@@ -1665,6 +1665,10 @@ p{
     width: 33.333333%;
   }
 
+  .lg\:w-1\/5{
+    width: 20%;
+  }
+
   .lg\:bg-transparent{
     background-color: transparent;
   }
@@ -1682,6 +1686,10 @@ p{
 }
 
 @media (min-width: 1280px){
+  .xl\:w-1\/5{
+    width: 20%;
+  }
+
   .xl\:text-5xl{
     font-size: 3rem;
     line-height: 1;
