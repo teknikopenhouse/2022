@@ -21,13 +21,11 @@
     var header_navbar = document.querySelector(".navigation");
     var sticky = header_navbar.offsetTop;
 
-    if (window.pageYOffset > sticky) {
+    if (window.scrollY > sticky) {
       header_navbar.classList.add("sticky");
     } else {
       header_navbar.classList.remove("sticky");
     }
-
-
 
     // show or hide the back-top-top button
     var backToTop = document.querySelector(".back-to-top");
