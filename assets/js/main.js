@@ -23,8 +23,10 @@
 
     if (window.scrollY > sticky) {
       header_navbar.classList.add("sticky");
+      header_navbar.style.backgroundColor = "purple";
     } else {
       header_navbar.classList.remove("sticky");
+      header_navbar.style.backgroundColor = "";
     }
 
     // show or hide the back-top-top button
