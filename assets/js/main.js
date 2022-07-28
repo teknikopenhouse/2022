@@ -23,7 +23,9 @@
 
     if (window.scrollY > sticky) {
       header_navbar.classList.add("sticky");
-      header_navbar.style.backgroundColor = "purple";
+      // header_navbar.style.backgroundImage = "linear-gradient(to right, #D874A6,+ #EEEDE9)";
+      header_navbar.style.backgroundColor = "#EEEDE9";
+
     } else {
       header_navbar.classList.remove("sticky");
       header_navbar.style.backgroundColor = "";
@@ -74,7 +76,6 @@
   };
 
   window.document.addEventListener('scroll', onScroll);
-
 
   //===== close navbar-collapse when a  clicked
   let navbarToggler = document.querySelector(".navbar-toggler");
