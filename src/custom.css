@@ -265,3 +265,15 @@ div#slider div img{
     left: -300%;
   }
 }
+
+.card{
+  pointer-events: none;
+}
+
+.btnn{
+  pointer-events: auto;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
