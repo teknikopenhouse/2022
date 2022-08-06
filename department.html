@@ -34,8 +34,8 @@
     <div class="navigation fixed top-0 left-0 w-full z-30 duration-300">
       <div class="container">
         <nav class="navbar py-2 navbar-expand-lg flex justify-between items-center relative duration-300">
-          <a class="navbar-brand pl-4" href="index.html">
-            <img src="assets/img/favicon.png" alt="TOH 2022">
+          <a class="navbar-brand pl-4" href="./index.html">
+            <img src="./assets/img/favicon.png" class="h-[40px] md:h-auto" alt="TOH 2022">
           </a>
           <button class="navbar-toggler focus:outline-none block lg:hidden" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-cont rols="navbarSupportedContent" aria-expanded="false"
@@ -46,23 +46,23 @@
           </button>
           
           <div
+            x-data="{ open: false }"
             class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none"
             id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
               <li class="nav-item">
-                <input class="gothic font-semibold page-scroll cursor-pointer" type="button" onclick="location.href='index.html';" value="Home">
+                <a class="gothic font-semibold px-5 py-2 uppercase duration-300 hover:text-[#1c63f2] text-[#374151]" 
+                href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <input class="gothic font-semibold page-scroll cursor-pointer" type="button" onclick="location.href='index.html#about-us';" value="About">
+                <a class="gothic font-semibold page-scroll" href="#about-us">About</a>
               </li>
               <li class="nav-item">
                 <a class="gothic font-semibold page-scroll" href="#events">Events</a>
               </li>
               <li class="nav-item">
-                <a class="gothic font-semibold page-scroll" href="#team">Benefits</a>
-              </li>
-              <li class="nav-item">
-                <input class="gothic font-semibold page-scroll active" type="button" onclick="location.href='department.html';" value="Departement">
+                <a class="gothic font-semibold page-scroll active px-5 py-2 uppercase duration-300 hover:text-[#1c63f2] text-[#374151]" 
+                href="#dept-start">Department</a>
               </li>
             </ul>
           </div>
@@ -117,19 +117,19 @@
             <div class="text-center 2xl:text-left">
               <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Teknik Sipil & Lingkungan
               </h2>
-              <p class="text-justify wow fadeInLeft mb-8" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
+              <p class="text-justify wow fadeInLeft mb-3 text-black" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit.
                 Blanditiis consectetur vero asperiores minima! Quas ea perspiciatis laudantium veniam asperiores doloribus
                 quia earum dolores neque,
                 itaque eaque delectus porro rerum accusamus ullam ipsam, fugiat nesciunt praesentium maxime rem.
                 Perspiciatis fugiat corporis maiores
-                doloribus impedit quas, odit nisi. Corrupti minima culpa rem saepe voluptate ut excepturi vitae provident
-                animi adipisci veniam est nisi
-                dolor dicta repudiandae nemo consequatur odit, tempora praesentium fugit qui quaerat nobis atque! Magnam at
-                aliquam incidunt ducimus nulla
-                tempore odio tenetur ratione. Et ipsa, corporis fugit accusantium, tempore nobis, a ipsum dignissimos vero
-                quibusdam rem esse eos. Fugiat!
-              </p>
+                doloribus impedit quas, odit nisi. 
+              </p>              
+              <p  class="text-center 2xl:text-left wow fadeInLeft text-black">Departemen ini terdiri dari:</p>
+              <ul class="2xl:list-disc text-center 2xl:text-left mb-5 container">
+                <li>Teknik Sipil</li>
+                <li>Teknik Lingkungan</li>
+              </ul>
               <button type="button" class="hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
             </div>
           </div>
@@ -146,26 +146,28 @@
                                                   border-radius: 30px;"> -->
       <div class="container mx-auto py-10">
         <div class="flex flex-wrap lg:flex-row-reverse md:flex-row justify-center gap-10">
-          <img class="  rounded-3xl drop-shadow-md mx-auto wow fadeInLeft h-[395px]" data-wow-delay="0.3s"
+          <img class=" rounded-3xl drop-shadow-md mx-auto wow fadeInLeft h-[395px]" data-wow-delay="0.3s"
             src="assets/img/dept/DTM.png" alt="Tampak Depan Gedung FT UI">
             <!-- <object data='https://www.youtube.com/embed/X6CsbhSVUEc?autoplay=1' width='560px' height='315px'></object> -->
           <div class="about-us-box px-10 py-10 max-w-5xl wow fadeInLeft" data-wow-delay="0.3s">
             <div class="text-center 2xl:text-right">
-              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Teknik Mesin
-              </h2>
-              <p class="text-justify wow fadeInLeft mb-8" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
+              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Teknik Mesin</h2>
+              <p class="text-justify wow fadeInLeft mb-3 text-black" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit.
                 Blanditiis consectetur vero asperiores minima! Quas ea perspiciatis laudantium veniam asperiores doloribus
                 quia earum dolores neque,
                 itaque eaque delectus porro rerum accusamus ullam ipsam, fugiat nesciunt praesentium maxime rem.
                 Perspiciatis fugiat corporis maiores
-                doloribus impedit quas, odit nisi. Corrupti minima culpa rem saepe voluptate ut excepturi vitae provident
-                animi adipisci veniam est nisi
-                dolor dicta repudiandae nemo consequatur odit, tempora praesentium fugit qui quaerat nobis atque! Magnam at
-                aliquam incidunt ducimus nulla
-                tempore odio tenetur ratione. Et ipsa, corporis fugit accusantium, tempore nobis, a ipsum dignissimos vero
-                quibusdam rem esse eos. Fugiat!</p>
+                doloribus impedit quas, odit nisi. 
+              </p>
+              <div class="2xl:float-right">
+                <p  class="wow fadeInLeft text-black">Departemen ini terdiri dari:</p>
+                <ul class="2xl:list-disc mb-5 container text-center 2xl:text-left">
+                  <li>Teknik Mesin</li>
+                  <li>Teknik Perkapalan</li>
+                </ul>
                 <button type="button" class="justify-self-end hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+              </div>
             </div>
           </div>
         </div>
@@ -183,22 +185,23 @@
             <!-- <object data='https://www.youtube.com/embed/X6CsbhSVUEc?autoplay=1' width='560px' height='315px'></object> -->
           <div class="about-us-box px-10 py-10 max-w-5xl wow fadeInLeft" data-wow-delay="0.3s">
             <div class="text-center 2xl:text-left">
-              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Teknik Elektro
+              <h2 class="createland text-3xl mb-4" style="color: #3063AF;">Departemen Teknik Elektro
               </h2>
-              <p class="text-justify wow fadeInLeft mb-8" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
+              <p class="text-justify wow fadeInLeft mb-3 text-black" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit.
                 Blanditiis consectetur vero asperiores minima! Quas ea perspiciatis laudantium veniam asperiores doloribus
                 quia earum dolores neque,
                 itaque eaque delectus porro rerum accusamus ullam ipsam, fugiat nesciunt praesentium maxime rem.
                 Perspiciatis fugiat corporis maiores
-                doloribus impedit quas, odit nisi. Corrupti minima culpa rem saepe voluptate ut excepturi vitae provident
-                animi adipisci veniam est nisi
-                dolor dicta repudiandae nemo consequatur odit, tempora praesentium fugit qui quaerat nobis atque! Magnam at
-                aliquam incidunt ducimus nulla
-                tempore odio tenetur ratione. Et ipsa, corporis fugit accusantium, tempore nobis, a ipsum dignissimos vero
-                quibusdam rem esse eos. Fugiat!
+                doloribus impedit quas, odit nisi. 
               </p>
-              <button type="button" class="hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+              <p  class="text-center 2xl:text-left wow fadeInLeft text-black">Departemen ini terdiri dari:</p>
+              <ul class="2xl:list-disc text-center 2xl:text-left mb-2 container">
+                <li>Teknik Elektro</li>
+                <li>Teknik Komputer</li>
+                <li>Teknik Biomedik</li>
+              </ul>
+              <button type="button" class="hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
             </div>
           </div>
           
@@ -215,27 +218,27 @@
                                                   border-radius: 30px;"> -->
       <div class="container mx-auto py-10">
         <div class="flex flex-wrap lg:flex-row-reverse md:flex-row justify-center gap-10">
-          <img class="  rounded-3xl drop-shadow-md mx-auto wow fadeInLeft h-[395px]" data-wow-delay="0.3s"
+          <img class=" rounded-3xl drop-shadow-md mx-auto wow fadeInLeft h-[395px]" data-wow-delay="0.3s"
             src="assets/img/dept/DTMM.png" alt="Tampak Depan Gedung FT UI">
             <!-- <object data='https://www.youtube.com/embed/X6CsbhSVUEc?autoplay=1' width='560px' height='315px'></object> -->
           <div class="about-us-box px-10 py-10 max-w-5xl wow fadeInLeft" data-wow-delay="0.3s">
             <div class="text-center 2xl:text-right">
-              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Teknik Metalurgi & Material
-              </h2>
-              <p class="text-justify wow fadeInLeft mb-8" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
+              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Teknik Metalurgi & Material</h2>
+              <p class="text-justify wow fadeInLeft mb-3" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit.
                 Blanditiis consectetur vero asperiores minima! Quas ea perspiciatis laudantium veniam asperiores doloribus
                 quia earum dolores neque,
                 itaque eaque delectus porro rerum accusamus ullam ipsam, fugiat nesciunt praesentium maxime rem.
                 Perspiciatis fugiat corporis maiores
-                doloribus impedit quas, odit nisi. Corrupti minima culpa rem saepe voluptate ut excepturi vitae provident
-                animi adipisci veniam est nisi
-                dolor dicta repudiandae nemo consequatur odit, tempora praesentium fugit qui quaerat nobis atque! Magnam at
-                aliquam incidunt ducimus nulla
-                tempore odio tenetur ratione. Et ipsa, corporis fugit accusantium, tempore nobis, a ipsum dignissimos vero
-                quibusdam rem esse eos. Fugiat!
+                doloribus impedit quas, odit nisi. 
               </p>
-              <button type="button" class="justify-self-end hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+              <div class="2xl:float-right">
+                <p  class="wow fadeInLeft 2xl:text-left text-black">Departemen ini terdiri dari:</p>
+                <ul class="2xl:list-disc mb-5 container text-center 2xl:text-left">
+                  <li>Teknik Metalurgi & Material</li>
+                </ul>
+                <button type="button" class="justify-self-end hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+              </div>
             </div>
           </div>
         </div>
@@ -256,23 +259,23 @@
             <!-- <object data='https://www.youtube.com/embed/X6CsbhSVUEc?autoplay=1' width='560px' height='315px'></object> -->
           <div class="about-us-box px-10 py-10 max-w-5xl wow fadeInLeft" data-wow-delay="0.3s">
             <div class="text-center 2xl:text-left">
-            <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Arsitektur
-            </h2>
-            <p class="text-justify wow fadeInLeft mb-8" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit.
-              Blanditiis consectetur vero asperiores minima! Quas ea perspiciatis laudantium veniam asperiores doloribus
-              quia earum dolores neque,
-              itaque eaque delectus porro rerum accusamus ullam ipsam, fugiat nesciunt praesentium maxime rem.
-              Perspiciatis fugiat corporis maiores
-              doloribus impedit quas, odit nisi. Corrupti minima culpa rem saepe voluptate ut excepturi vitae provident
-              animi adipisci veniam est nisi
-              dolor dicta repudiandae nemo consequatur odit, tempora praesentium fugit qui quaerat nobis atque! Magnam at
-              aliquam incidunt ducimus nulla
-              tempore odio tenetur ratione. Et ipsa, corporis fugit accusantium, tempore nobis, a ipsum dignissimos vero
-              quibusdam rem esse eos. Fugiat!
-            </p>
-            <button type="button" class="justify-self-end hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
-          </div>
+              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Arsitektur
+              </h2>
+              <p class="text-justify wow fadeInLeft mb-3 text-black" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit.
+                Blanditiis consectetur vero asperiores minima! Quas ea perspiciatis laudantium veniam asperiores doloribus
+                quia earum dolores neque,
+                itaque eaque delectus porro rerum accusamus ullam ipsam, fugiat nesciunt praesentium maxime rem.
+                Perspiciatis fugiat corporis maiores
+                doloribus impedit quas, odit nisi. 
+              </p>
+              <p  class="text-center 2xl:text-left wow fadeInLeft text-black">Departemen ini terdiri dari:</p>
+              <ul class="2xl:list-disc text-center 2xl:text-left mb-2 container">
+                <li>Arsitektur</li>
+                <li>Arsitektur Interior</li>
+              </ul>
+              <button type="button" class="hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+            </div>
           </div>
         </div>
       </div>
@@ -292,22 +295,23 @@
             <!-- <object data='https://www.youtube.com/embed/X6CsbhSVUEc?autoplay=1' width='560px' height='315px'></object> -->
           <div class="about-us-box px-10 py-10 max-w-5xl wow fadeInLeft" data-wow-delay="0.3s">
             <div class="text-center 2xl:text-right">
-              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Teknik Kimia
-              </h2>
-              <p class="text-justify wow fadeInLeft mb-8" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
+              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Teknik Kimia</h2>
+              <p class="text-justify wow fadeInLeft mb-3" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit.
                 Blanditiis consectetur vero asperiores minima! Quas ea perspiciatis laudantium veniam asperiores doloribus
                 quia earum dolores neque,
                 itaque eaque delectus porro rerum accusamus ullam ipsam, fugiat nesciunt praesentium maxime rem.
                 Perspiciatis fugiat corporis maiores
-                doloribus impedit quas, odit nisi. Corrupti minima culpa rem saepe voluptate ut excepturi vitae provident
-                animi adipisci veniam est nisi
-                dolor dicta repudiandae nemo consequatur odit, tempora praesentium fugit qui quaerat nobis atque! Magnam at
-                aliquam incidunt ducimus nulla
-                tempore odio tenetur ratione. Et ipsa, corporis fugit accusantium, tempore nobis, a ipsum dignissimos vero
-                quibusdam rem esse eos. Fugiat!
+                doloribus impedit quas, odit nisi. 
               </p>
-              <button type="button" class="justify-self-end hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+              <div class="mx-auto 2xl:float-right">
+                <p  class="wow fadeInLeft text-black">Departemen ini terdiri dari:</p>
+                <ul class="2xl:list-disc mb-5 container text-center 2xl:text-left">
+                  <li>Teknik Kimia</li>
+                  <li>Teknik Bioproses</li>
+                </ul>
+                <button type="button" class="justify-self-end hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+              </div>
             </div>
           </div>
         </div>
@@ -330,20 +334,19 @@
             <div class="text-center 2xl:text-left">
               <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Departemen Teknik Industri
               </h2>
-              <p class="text-justify wow fadeInLeft mb-8" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
+              <p class="text-justify wow fadeInLeft mb-3 text-black" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit.
                 Blanditiis consectetur vero asperiores minima! Quas ea perspiciatis laudantium veniam asperiores doloribus
                 quia earum dolores neque,
                 itaque eaque delectus porro rerum accusamus ullam ipsam, fugiat nesciunt praesentium maxime rem.
                 Perspiciatis fugiat corporis maiores
-                doloribus impedit quas, odit nisi. Corrupti minima culpa rem saepe voluptate ut excepturi vitae provident
-                animi adipisci veniam est nisi
-                dolor dicta repudiandae nemo consequatur odit, tempora praesentium fugit qui quaerat nobis atque! Magnam at
-                aliquam incidunt ducimus nulla
-                tempore odio tenetur ratione. Et ipsa, corporis fugit accusantium, tempore nobis, a ipsum dignissimos vero
-                quibusdam rem esse eos. Fugiat!
+                doloribus impedit quas, odit nisi. 
               </p>
-              <button type="button" class="justify-self-end hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+              <p  class="text-center 2xl:text-left wow fadeInLeft text-black">Departemen ini terdiri dari:</p>
+              <ul class="2xl:list-disc text-center 2xl:text-left mb-2 container">
+                <li>Teknik Industri</li>
+              </ul>
+              <button type="button" class="hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
             </div>
           </div>
         </div>
@@ -364,22 +367,28 @@
             <!-- <object data='https://www.youtube.com/embed/X6CsbhSVUEc?autoplay=1' width='560px' height='315px'></object> -->
           <div class="about-us-box px-10 py-10 max-w-5xl wow fadeInLeft" data-wow-delay="0.3s">
             <div class="text-center 2xl:text-right">
-              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Program Internasional
-              </h2>
-              <p class="text-justify wow fadeInLeft mb-8" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
+              <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Program Internasional</h2>
+              <p class="text-justify wow fadeInLeft mb-3" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit.
                 Blanditiis consectetur vero asperiores minima! Quas ea perspiciatis laudantium veniam asperiores doloribus
                 quia earum dolores neque,
                 itaque eaque delectus porro rerum accusamus ullam ipsam, fugiat nesciunt praesentium maxime rem.
                 Perspiciatis fugiat corporis maiores
-                doloribus impedit quas, odit nisi. Corrupti minima culpa rem saepe voluptate ut excepturi vitae provident
-                animi adipisci veniam est nisi
-                dolor dicta repudiandae nemo consequatur odit, tempora praesentium fugit qui quaerat nobis atque! Magnam at
-                aliquam incidunt ducimus nulla
-                tempore odio tenetur ratione. Et ipsa, corporis fugit accusantium, tempore nobis, a ipsum dignissimos vero
-                quibusdam rem esse eos. Fugiat!
+                doloribus impedit quas, odit nisi. 
               </p>
-              <button type="button" class="justify-self-end hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+              <div class="2xl:float-right">
+                <p  class="wow text-center 2xl:text-left fadeInLeft text-black">Departemen ini terdiri dari:</p>
+                <ul class="columns-2 2xl:columns-3 2xl:list-disc mb-5 container text-center 2xl:text-left">
+                  <li class="pr-5">Mechanical Engineering</li>
+                  <li class="pr-5">Civil Engineering</li>
+                  <li class="pr-5">Electrical Engineering</li>
+                  <li class="pr-5">Metallurgical & Materials</li>
+                  <li class="pr-5">Architecture</li>
+                  <li class="pr-5">Chemical Engineering</li>
+                  <li class="pr-5">Industrial Engineering</li>
+                </ul>
+                <button type="button" class="justify-self-end hover:scale-105 duration-150 text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">Read More</button>
+              </div>
             </div>
           </div>
         </div>
