@@ -916,14 +916,14 @@ input[type="range"]::-ms-fill-lower{
   margin-right: auto;
 }
 
-.mx-6{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
 .my-12{
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .mr-auto{
@@ -974,12 +974,16 @@ input[type="range"]::-ms-fill-lower{
   margin-bottom: 4rem;
 }
 
+.mb-52{
+  margin-bottom: 13rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
 
-.mb-52{
-  margin-bottom: 13rem;
+.mb-7{
+  margin-bottom: 1.75rem;
 }
 
 .block{
