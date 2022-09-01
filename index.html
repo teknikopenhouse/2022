@@ -3,15 +3,7 @@
 <head>
   <!-- Required meta tags -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <meta property="og:site_name" content="Teknik Open House 2022">
-  <meta property="og:title" content="Teknik Open House 2022">
-  <meta property="og:description" content="#KelanaMenujuCita">
-
-  <meta property="og:image" itemprop="image" content="./assets/img/toh-resized-navbar.png">
-  <meta property="og:type" content="website">
-  <meta property="og:image:type" content="image/png">
-<!-- ini tulisan kania -->
+  <!-- ini tulisan kania -->
 
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="assets/img/toh-resized-navbar.png" type="image/png">
@@ -38,44 +30,35 @@
 
 <body style="overflow: overlay; background-image: url('assets/img/hero-toh.png');" class="bg-cover no-repeat w-full bg-fixed" id="paling-atas"> 
 
-  <header id="header-wrap" class="relative">
-    <div class="navigation fixed top-0 left-0 w-full z-30 duration-300">
-      <div class="container">
-        <nav class="navbar py-2 navbar-expand-lg flex justify-between items-center relative duration-300">
-          <a class="navbar-brand pl-4" href="./index.html">
-            <img src="./assets/img/favicon.png" class="h-[40px] md:h-auto" alt="TOH 2022">
-          </a>
-          <button class="navbar-toggler focus:outline-none block lg:hidden" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-cont rols="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="toggler-icon"></span>
-            <span class="toggler-icon"></span>
-            <span class="toggler-icon"></span>
-          </button>
-          
-          <div
-            x-data="{ open: false }"
-            class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none"
-            id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
-              <li class="nav-item">
-                <a class="gothic font-semibold page-scroll active" href="#hero-area">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="gothic font-semibold page-scroll" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="gothic font-semibold page-scroll" href="#events">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="gothic font-semibold px-5 py-2 uppercase duration-300 hover:text-[#1c63f2] text-[#374151]" 
-                href="./department.html">Department</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  <!-- Navbar -->
+  <header id="header" class="w-full py-5 z-30 fixed navigation duration-300">    
+    <nav class="container relative">
+      <div class="w-full flex items-center justify-between mt-0 px-6 py-2">
+        <label for="menu-toggle" class="cursor-pointer md:hidden block">
+            <svg class="fill-current text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle">
+        
+        <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
+            <nav>
+              <ul class="md:flex items-center justify-between text-base text-gray-800 pt-4 md:pt-0">
+                  <li><a class="supersonic inline-block no-underline text-orange-700 duration-150 font-medium text-lg py-2 px-4 lg:-ml-2" href="#">Home</a></li>
+                  <li><a class="supersonic inline-block no-underline hover:text-orange-700 duration-150 font-medium hover:font-extrabold text-lg py-2 px-4 lg:-ml-2" href="#events">Events</a></li>
+                  <li><a class="supersonic inline-block no-underline hover:text-orange-700 duration-150 font-medium hover:font-extrabold text-lg py-2 px-4 lg:-ml-2" href="#about-us">About</a></li>
+                  <li><a class="supersonic inline-block no-underline hover:text-orange-700 duration-150 font-medium hover:font-extrabold text-lg py-2 px-4 lg:-ml-2" href="department.html">Department</a></li>
+              </ul>
+            </nav>
+        </div>
+        <div class="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4" id="nav-content">
+            <div class="auth flex items-center w-full md:w-full">
+              <button class="supersonic text-lg px-5 bg-orange-500 shadow-lg text-gray-200 p-2 rounded-full hover:bg-orange-800 duration-100 hover:scale-105 hover:text-gray-100">DAFTAR YUK</button>
+            </div>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <!-- Updated Hero Area Start -->
@@ -86,16 +69,13 @@
       <h2 id="title" class="supersonic text-6xl sm:text-8xl px-8 wow fadeInUp" data-wow-delay="1.6s">
         Teknik Open House 2022
       </h2>
-      <!-- <br>
-      <h2 id="title-meaning" class="gothic px-8 wow fadeInUp mb-4" data-wow-delay="1.9s"> Acara yang diadakan dengan tujuan memperkenalkan jurusan, fasilitas, dan lembaga yang ada di FT UI
-      </h2>
-      <h2 class="gothic px-8 wow fadeInUp" data-wow-delay="1.9s"> kepada masyarakat umum khususnya siswa/i SMA. -->
-      </h2>
+      
+      
       <br>
       <h2 id="tagline" class="supersonic px-8 wow fadeInUp mb-4 text-xl" data-wow-delay="2.2s">#KelanaMenujuCita</h2>
       <br>
       <div class="scroll wow fadeInDown" data-wow-delay="2.1s">
-        <a href="#events" class="min-w-full page-scroll">
+        <a href="#events" class="page-scroll mx-auto max-w-[120px] min-w-[70px]">
           <img class="animate-bounce" src="assets/img/down-arrow.png" alt="Get to know us!">
         </a>
       </div>
@@ -103,68 +83,47 @@
   </section>
   <!-- Updated Hero Area End -->
 
-  <section id="events" class="relative py-24 px-10">
-    <div class="container py-20">
-    <div class="text-center">
-      <h2 class="supersonic mb-12 section-heading wow fadeInDown section-title" data-wow-delay="0.3s">The Events</h2>
-    </div>
-    <div class="flex flex-wrap justify-center">
-      <!-- first card -->
-      <div class="card duration-100 w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-        <div class="event-box overflow-hidden flex-1 flex flex-col wow fadeInLeft" data-wow-delay="0.3s">
-          <div class="bg-cover bg-center h-48" style="background-image: url(assets/img/Day\ 1.png);"></div>
-          <div class="p-4 flex-1 flex flex-col text-center">
-            <h2 class="createland mb-4 text-2xl text-center">Workshop & Talkshow</h2>
-            <div class="mb-4 text-grey-darker text-sm flex-1">
-              <p class="gothic mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam modi, expedita quos doloremque autem ipsum itaque incidunt ipsam reprehenderit
-                fuga! Dolores quisquam eius cum accusamus?
-              </p>
-              <a href='day1.html'>
-              <button type="button" class="btnn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Lebih Lanjut</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- second card -->
-      <div class="card duration-100 w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-        <div class="event-box overflow-hidden flex-1 flex flex-col wow fadeInLeft" data-wow-delay="0.3s">
-          <div class="bg-cover bg-center h-48" style="background-image: url(assets/img/Day\ 2.png);"></div>
-          <div class="p-4 flex-1 flex flex-col text-center">
-            <h2 class="createland mb-4 text-2xl text-center" style="color: #3063AF;">Mentoring</h2>
-            <div class="mb-4 text-grey-darker text-sm flex-1">
-              <p class="gothic mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam modi, expedita quos doloremque autem ipsum itaque incidunt ipsam reprehenderit
-                fuga! Dolores quisquam eius cum accusamus?
-              </p>
-              <button type="button" href="" class="btnn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Read More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- third card -->
-      <div class="card duration-100 w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-        <div class="event-box overflow-hidden flex-1 flex flex-col wow fadeInLeft" data-wow-delay="0.3s">
-          <div class="bg-cover bg-center h-48" style="background-image: url(assets/img/Day\ 3.png);"></div>
-          <div class="p-4 flex-1 flex flex-col text-center">
-            <h2 class="createland mb-4 text-2xl text-center" style="color: #3063AF;">Kupas Teknik & Tamasya Teknik</h2>
-            <div class="mb-4 text-grey-darker text-sm flex-1">
-              <p class="gothic mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam modi, expedita quos doloremque autem ipsum itaque incidunt ipsam reprehenderit
-                fuga! Dolores quisquam eius cum accusamus?
-              </p>
-              <button type="button" href="" class="btnn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Read More</button>
-            </div>
+  <!-- Timeline Start -->
+  <div class="text-center">
+    <h2 class="supersonic mb-12 section-heading wow fadeInDown section-title" data-wow-delay="0.3s">The Events</h2>
+  </div>
 
-          </div>
+<div class="container mx-auto w-full h-full" id="events">
+  <div class="relative wrap overflow-hidden p-10 h-full">
+    <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+      <!-- right timeline -->    
+      <div class="mb-8 flex justify-between items-center w-full right-timeline">
+        <div class="order-1 w-5/12"></div>
+        <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-14 h-14 rounded-full">
+          <h1 class="mx-auto font-semibold text-white text-xl">1</h1>
         </div>
+        <a href="day1.html" class="order-1 bg-cover bg-center rounded-lg shadow-xl min-h-[168px] w-5/12 px-6 py-4 hover:scale-110 duration-100" style="background-image: url(assets/img/Day\ 1.png);"> 
+        </a>
       </div>
       
-      
+      <!-- left timeline -->
+      <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+        <div class="order-1 w-5/12"></div>
+        <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-14 h-14 rounded-full">
+          <h1 class="mx-auto text-white font-semibold text-xl">2</h1>
+        </div>
+        <a href="day2.html" class="order-1 bg-cover bg-center rounded-lg shadow-xl w-5/12 px-6 py-4 min-h-[168px] hover:scale-110 duration-100" style="background-image: url(assets/img/Day\ 2.png);">
+        </a>
+      </div>
+ 
+      <!-- right timeline -->
+      <div class="flex justify-between items-center w-full right-timeline">
+        <div class="order-1 w-5/12"></div>
+        <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-14 h-14 rounded-full">
+          <h1 class="mx-auto font-semibold text-white text-xl">3</h1>
+        </div>
+        <a href="day3.html" class="order-1 bg-cover bg-center rounded-lg shadow-xl min-h-[168px] w-5/12 px-6 py-4 hover:scale-110 duration-100" style="background-image: url(assets/img/Day\ 3.png);"> 
+        </a>
+      </div>
+
     </div>
   </div>
-</section>
+</div>
 
   <!-- ABOUT US START -->
   <section id="about-us" class="-z-10">
@@ -176,7 +135,7 @@
       <h2 class="supersonic text-center text-5xl font-medium section-title mb-12 section-heading wow fadeInDown section-title"
         data-wow-delay="0.3s">About Us</h2>
       <div class="flex flex-wrap justify-center gap-10">
-        <iframe class="rounded-3xl drop-shadow-md mx-auto wow fadeInLeft" width="395" height="395" src="https://www.youtube.com/embed/E9j16wtuKq0?&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="rounded-lg drop-shadow-md mx-auto wow fadeInLeft" width="395" height="395" src="https://www.youtube.com/embed/E9j16wtuKq0?&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="about-us-box px-10 py-10 max-w-5xl wow fadeInLeft" data-wow-delay="0.3s">
           <h2 class="createland text-3xl mb-5" style="color: #3063AF;">Mengenal Fakultas Teknik Lebih Dalam</h2>
           <p class="text-justify wow fadeInLeft" data-wow-delay="0.6s">Lorem ipsum dolor, sit amet consectetur
@@ -527,7 +486,9 @@
   <section id="google-map-area">
     <div class="mx-6 mb-6">
       <div class="flex">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1514.1643638679059!2d106.82346196810711!3d-6.362109394060209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec192c30aa47%3A0x72f29bad0571e98c!2sFaculty%20of%20Engineering%20Universitas%20Indonesia!5e0!3m2!1sen!2sid!4v1658085205370!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1514.1643638679059!2d106.82346196810711!3d-6.362109394060209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec192c30aa47%3A0x72f29bad0571e98c!2sFaculty%20of%20Engineering%20Universitas%20Indonesia!5e0!3m2!1sen!2sid!4v1658085205370!5m2!1sen!2sid" 
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -556,7 +517,7 @@
             </div>
             <div class="flex">
               <p class="mr-1 text-gray-800">Whatsapp:</p>
-              <a href="https://wa.me/+6281212345453" class="transition-colors duration-300">0812 1234 5453</a>
+              <a href="https://wa.me/+6281212345453" class="transition-colors duration-300 hover:underline">0812 1234 5453</a>
             </div>
             <div class="flex">
               <p class="mr-1 text-gray-800">Line:</p>
@@ -570,7 +531,7 @@
             </div>
             <div class="flex">
               <p class="mr-1 text-gray-800">Whatsapp:</p>
-              <a href="https://wa.me/+6287889159154" class="transition-colors duration-300">0878 8915 9154</a>
+              <a href="https://wa.me/+6287889159154" class="transition-colors duration-300 hover:underline">0878 8915 9154</a>
             </div>
             <div class="flex">
               <p class="mr-1 text-gray-800">Line:</p>
