@@ -30,36 +30,48 @@
 
 <body style="overflow: overlay; background-image: url('assets/img/hero-toh.png');" class="bg-cover no-repeat w-full bg-fixed" id="paling-atas"> 
 
-  <!-- Navbar -->
-  <header id="header" class="w-full py-5 z-30 fixed navigation duration-300">    
-    <nav class="container relative">
-      <div class="w-full flex items-center justify-between mt-0 px-6 py-2">
-        <label for="menu-toggle" class="cursor-pointer md:hidden block">
-            <svg class="fill-current text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <title>menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-        </label>
-        <input class="hidden" type="checkbox" id="menu-toggle">
-        
-        <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
-            <nav>
-              <ul class="md:flex items-center justify-between text-base pt-4 md:pt-0">
-                  <li><a class="supersonic  inline-block no-underline text-orange-700 duration-150 font-medium text-lg py-2 px-4 lg:-ml-2" href="#">Home</a></li>
-                  <li><a class="supersonic page-scroll text-gray-800 inline-block no-underline hover:text-orange-700 duration-150 font-medium hover:font-extrabold text-lg py-2 px-4 lg:-ml-2" href="#events">Events</a></li>
-                  <li><a class="supersonic page-scroll text-gray-800 inline-block no-underline hover:text-orange-700 duration-150 font-medium hover:font-extrabold text-lg py-2 px-4 lg:-ml-2" href="#about-us">About</a></li>
-                  <li><a class="supersonic text-gray-800 inline-block no-underline hover:text-orange-700 duration-150 font-medium hover:font-extrabold text-lg py-2 px-4 lg:-ml-2" href="department.html">Department</a></li>
-              </ul>
-            </nav>
-        </div>
-        <div class="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4" id="nav-content">
-            <div class="auth flex items-center w-full md:w-full">
-              <a href="https://www.goersapp.com/events/teknik-open-house--teknikopenhouse" target="_blank" class="supersonic text-lg px-5 bg-orange-500 shadow-lg text-gray-200 p-2 rounded-full hover:bg-orange-800 duration-100 hover:scale-105 hover:text-gray-100">DAFTAR YUK</a>
-            </div>
-        </div>
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap" class="relative">
+    <!-- Navbar Start -->
+    <div class="navigation fixed top-0 left-0 w-full z-30 duration-300">
+      <div class="container">
+        <nav class="navbar py-2 navbar-expand-lg flex justify-between items-center relative duration-300">
+
+          <button class="navbar-toggler focus:outline-none block lg:hidden" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-cont rols="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto lg:flex">
+              <li class="nav-item">
+                <a class="supersonic page-scroll active" href="#hero-area">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="supersonic page-scroll" href="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="supersonic page-scroll" href="#about-us">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="supersonic block px-5 py-2 text-[#4A5568] hover:text-orange-500 duration-300" href="/department.html">Department</a>
+              </li>
+            </ul>
+          </div>
+          <div class="justify-end auth flex items-center w-full md:w-full">
+            <a href="https://www.goersapp.com/events/teknik-open-house--teknikopenhouse" target="_blank" class="supersonic text-lg px-5 bg-orange-500 shadow-lg text-gray-200 p-2 rounded-full hover:bg-orange-800 duration-100 hover:scale-105 hover:text-gray-100">DAFTAR YUK</a>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
+    <!-- Navbar End -->
   </header>
+  <!-- Header Area wrapper End -->
 
   <!-- Updated Hero Area Start -->
   <section id="hero-area">
@@ -84,11 +96,9 @@
   <!-- Updated Hero Area End -->
 
   <!-- Timeline Start -->
-  <div class="text-center" id="events">
-    <h2 class="supersonic mb-12 section-heading wow fadeInDown section-title" data-wow-delay="0.3s">The Events</h2>
-  </div>
 
-<div class="container mx-auto w-full h-full">
+<div class="container mx-auto w-full h-full text-center" id="events">
+  <h2 class="supersonic mb-12 section-heading wow fadeInDown section-title" data-wow-delay="0.3s">The Events</h2>
   <div class="relative wrap overflow-hidden p-10 h-full">
     <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
       <!-- right timeline -->    
