@@ -939,11 +939,6 @@ input[type="range"]::-ms-fill-lower{
   margin-bottom: 1rem;
 }
 
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .mr-auto{
   margin-right: auto;
 }
@@ -1020,24 +1015,20 @@ input[type="range"]::-ms-fill-lower{
   margin-bottom: 13rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
+.mt-44{
+  margin-top: 11rem;
 }
 
 .mb-20{
   margin-bottom: 5rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
+.mt-10{
+  margin-top: 2.5rem;
 }
 
-.mt-44{
-  margin-top: 11rem;
+.mt-24{
+  margin-top: 6rem;
 }
 
 .block{
@@ -1100,22 +1091,6 @@ input[type="range"]::-ms-fill-lower{
   height: 3.5rem;
 }
 
-.h-20{
-  height: 5rem;
-}
-
-.h-64{
-  height: 16rem;
-}
-
-.h-52{
-  height: 13rem;
-}
-
-.h-96{
-  height: 24rem;
-}
-
 .min-h-\[168px\]{
   min-height: 168px;
 }
@@ -1126,14 +1101,6 @@ input[type="range"]::-ms-fill-lower{
 
 .w-10{
   width: 2.5rem;
-}
-
-.w-1\/2{
-  width: 50%;
-}
-
-.w-2\/5{
-  width: 40%;
 }
 
 .w-5\/12{
@@ -1277,10 +1244,6 @@ input[type="range"]::-ms-fill-lower{
 
 .place-self-center{
   place-self: center;
-}
-
-.self-center{
-  align-self: center;
 }
 
 .overflow-hidden{
@@ -1458,11 +1421,6 @@ input[type="range"]::-ms-fill-lower{
   padding-right: 0.75rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1471,6 +1429,11 @@ input[type="range"]::-ms-fill-lower{
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-4{
@@ -1489,40 +1452,28 @@ input[type="range"]::-ms-fill-lower{
   padding-top: 8rem;
 }
 
-.pt-36{
-  padding-top: 9rem;
-}
-
-.pt-24{
-  padding-top: 6rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
-.pr-5{
-  padding-right: 1.25rem;
-}
-
-.pt-48{
-  padding-top: 12rem;
-}
-
-.pt-64{
-  padding-top: 16rem;
-}
-
-.pt-44{
-  padding-top: 11rem;
-}
-
 .pt-28{
   padding-top: 7rem;
 }
 
 .pb-20{
   padding-bottom: 5rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+.pt-64{
+  padding-top: 16rem;
+}
+
+.pt-24{
+  padding-top: 6rem;
+}
+
+.pr-5{
+  padding-right: 1.25rem;
 }
 
 .text-center{
@@ -1673,18 +1624,14 @@ input[type="range"]::-ms-fill-lower{
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
-.text-purple-700{
-  --tw-text-opacity: 1;
-  color: rgb(108 43 217 / var(--tw-text-opacity));
-}
-
 .text-\[\#F3B939\]{
   --tw-text-opacity: 1;
   color: rgb(243 185 57 / var(--tw-text-opacity));
 }
 
-.opacity-25{
-  opacity: 0.25;
+.text-purple-700{
+  --tw-text-opacity: 1;
+  color: rgb(108 43 217 / var(--tw-text-opacity));
 }
 
 .shadow{
@@ -1702,12 +1649,6 @@ input[type="range"]::-ms-fill-lower{
 .shadow-xl{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1763,10 +1704,6 @@ input[type="range"]::-ms-fill-lower{
 
 .duration-100{
   transition-duration: 100ms;
-}
-
-.duration-200{
-  transition-duration: 200ms;
 }
 
 .duration-150{
@@ -2119,11 +2056,6 @@ p{
   background-color: rgb(138 44 13 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-blue-300:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(164 202 254 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-purple-800:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(85 33 181 / var(--tw-bg-opacity));
@@ -2248,12 +2180,12 @@ p{
     height: auto;
   }
 
-  .md\:h-96{
-    height: 24rem;
-  }
-
   .md\:h-64{
     height: 16rem;
+  }
+
+  .md\:h-96{
+    height: 24rem;
   }
 
   .md\:w-1\/3{
@@ -2289,12 +2221,12 @@ p{
     padding-right: 6rem;
   }
 
-  .md\:pl-32{
-    padding-left: 8rem;
-  }
-
   .md\:pt-44{
     padding-top: 11rem;
+  }
+
+  .md\:pl-32{
+    padding-left: 8rem;
   }
 
   .md\:text-left{
@@ -2306,14 +2238,14 @@ p{
     line-height: 1;
   }
 
-  .md\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-8xl{
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
