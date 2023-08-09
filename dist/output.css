@@ -1596,6 +1596,11 @@ input[type="range"]::-ms-fill-lower{
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.text-\[\#D34A93\]{
+  --tw-text-opacity: 1;
+  color: rgb(211 74 147 / var(--tw-text-opacity));
+}
+
 .text-purple-700{
   --tw-text-opacity: 1;
   color: rgb(108 43 217 / var(--tw-text-opacity));
@@ -1614,11 +1619,6 @@ input[type="range"]::-ms-fill-lower{
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.text-\[\#D34A93\]{
-  --tw-text-opacity: 1;
-  color: rgb(211 74 147 / var(--tw-text-opacity));
 }
 
 .shadow{
@@ -2082,16 +2082,6 @@ p{
   color: rgb(14 159 110 / var(--tw-text-opacity));
 }
 
-.hover\:text-orange-800:hover{
-  --tw-text-opacity: 1;
-  color: rgb(138 44 13 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-\[\#D34A93\]:hover{
   --tw-text-opacity: 1;
   color: rgb(211 74 147 / var(--tw-text-opacity));
@@ -2100,6 +2090,11 @@ p{
 .hover\:text-pink-800:hover{
   --tw-text-opacity: 1;
   color: rgb(153 21 75 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
