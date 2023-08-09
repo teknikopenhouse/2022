@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <!-- anjay mabar -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/toh-resized-navbar.png"
+      type="image/png"
+    />
+
+    <title>Departemen di Fakultas Teknik</title>
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/LineIcons.2.0.css"
+    />
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+    <!-- Tiny Slider  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/tiny-slider.css"
+    />
+    <!-- Tailwind css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/tailwind.css" />
+    <!-- Other CSS-->
+    <link href="./dist/output.css" rel="stylesheet" />
+    <!-- Custom CSS-->
+    <link href="./src/custom.css" rel="stylesheet" />
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/fonts/Gothic_Webfont/font.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/fonts/Supersonic/supersonic.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/fonts/Createland/createland.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header Area wrapper Starts -->
+    <div class="navigation top-0 left-0 w-full z-30 duration-300">
+      <nav class="container">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-7">
+              <!-- Mobile menu button -->
+              <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                  <svg
+                    class="w-6 h-6 text-gray-500 hover:text-green-500"
+                    x-show="!showMenu"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+              </div>
+              <!-- Primary Navbar items -->
+              <div class="py-8 lg:py-5">
+                <ul class="navbar-nav hidden md:flex items-center space-x-1">
+                  <li class="nav-item">
+                    <a
+                      href="/index.html"
+                      class="supersonic block px-5 py-2 text-[#4A5568] hover:text-[#D34A93] duration-300 font-semibold"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="index.html#about-us"
+                      class="supersonic block px-5 py-2 text-[#4A5568] hover:text-[#D34A93] duration-300 font-semibold"
+                      >About</a
+                    >
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a
+                      href="#events"
+                      class="supersonic block px-5 py-2 text-[#4A5568] hover:text-orange-500 duration-300 font-semibold"
+                      >Events</a
+                    >
+                  </li> -->
+                  <li class="nav-item">
+                    <a
+                      href="department.html"
+                      class="supersonic block px-5 py-2 text-[#D34A93] hover:text-pink-800 duration-300 font-semibold"
+                      >Departments</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Secondary Navbar items -->
+            <div class="md:flex items-center auth my-auto space-x-3">
+              <a
+                href="https://goers.co/teknikopenhouse2023"
+                target="_blank"
+                class="supersonic text-lg px-5 bg-[#D34A93] shadow-lg text-gray-200 p-2 rounded-full hover:bg-pink-800 duration-100 hover:scale-105 hover:text-gray-100"
+                >DAFTAR YUK</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul class="">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="supersonic page-scroll active block text-sm text-white font-semibold"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#about-us"
+                class="supersonic page-scroll block text-sm transition duration-300"
+                >About</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                href="#events"
+                class="supersonic page-scroll block text-sm transition duration-300"
+                >Events</a
+              > -->
+            </li>
+            <li class="nav-item">
+              <a
+                href="department.html"
+                class="supersonic block px-5 py-2 uppercase text-sm text-gray-500 transition duration-300"
+                >Departments</a
+              >
+            </li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+    </div>
+    <!-- Header Area wrapper End -->
+
+
+    <script src="assets/js/navbar-dept.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/contact-form.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="node_modules/flowbite/src/flowbite.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+  </body>
+</html>

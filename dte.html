@@ -67,115 +67,7 @@
     id="paling-atas"
   >
     <!-- Header Area wrapper Starts -->
-    <div class="sticky bg-[#EEEDE9] top-0 left-0 w-full z-30 duration-300">
-      <nav class="container">
-        <div class="max-w-6xl mx-auto px-4">
-          <div class="flex justify-between">
-            <div class="flex space-x-7">
-              <!-- Mobile menu button -->
-              <div class="md:hidden flex items-center">
-                <button class="outline-none mobile-menu-button">
-                  <svg
-                    class="w-6 h-6 text-gray-500 hover:text-green-500"
-                    x-show="!showMenu"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                  </svg>
-                </button>
-              </div>
-              <!-- Primary Navbar items -->
-              <div class="py-8 lg:py-5">
-                <ul class="navbar-nav hidden md:flex items-center space-x-1">
-                  <li class="nav-item">
-                    <a
-                      href="/index.html"
-                      class="supersonic block px-5 py-2 text-[#4A5568] hover:text-orange-500 duration-300 font-semibold"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="index.html#about-us"
-                      class="supersonic block px-5 py-2 text-[#4A5568] hover:text-orange-500 duration-300 font-semibold"
-                      >About</a
-                    >
-                  </li>
-                  <!-- <li class="nav-item">
-                    <a
-                      href="#events"
-                      class="supersonic block px-5 py-2 text-[#4A5568] hover:text-orange-500 duration-300 font-semibold"
-                      >Events</a
-                    >
-                  </li> -->
-                  <li class="nav-item">
-                    <a
-                      href="department.html"
-                      class="supersonic block px-5 py-2 text-orange-500 hover:text-orange-800 duration-300 font-semibold"
-                      >Departments</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- Secondary Navbar items -->
-            <div class="md:flex items-center auth my-auto space-x-3">
-              <a
-                href=""
-                class="supersonic text-lg px-5 bg-[#D34A93] shadow-lg text-gray-200 p-2 rounded-full hover:bg-pink-800 duration-100 hover:scale-105 hover:text-gray-100"
-                >DAFTAR YUK</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- mobile menu -->
-        <div class="hidden mobile-menu">
-          <ul class="">
-            <li class="nav-item">
-              <a
-                href="index.html"
-                class="supersonic page-scroll active block text-sm text-white font-semibold"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="#about-us"
-                class="supersonic page-scroll block text-sm transition duration-300"
-                >About</a
-              >
-            </li>
-            <!-- <li class="nav-item">
-              <a
-                href="#events"
-                class="supersonic page-scroll block text-sm transition duration-300"
-                >Events</a
-              > -->
-            </li>
-            <li class="nav-item">
-              <a
-                href="department.html"
-                class="supersonic block px-5 py-2 uppercase text-sm text-gray-500 transition duration-300"
-                >Departments</a
-              >
-            </li>
-          </ul>
-        </div>
-        <script>
-          const btn = document.querySelector("button.mobile-menu-button");
-          const menu = document.querySelector(".mobile-menu");
-
-          btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-          });
-        </script>
-      </nav>
-    </div>
+    <navbar-dept> </navbar-dept>
     <!-- Header Area wrapper End -->
 
     <!-- Updated Hero Area Start -->
@@ -288,6 +180,7 @@
 
     <footer></footer>
 
+    <script src="assets/js/navbar-dept.js"></script>
     <script src="assets/js/footer.js"></script>
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/tiny-slider.js"></script>
